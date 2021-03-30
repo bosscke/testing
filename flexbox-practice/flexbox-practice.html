@@ -7,16 +7,54 @@
 
 	<style>
 
+		@media (max-width: 425px) {
+
+			.container {
+
+				flex-direction: column;
+			}
+		}
+
+/***************************@media******************************/
+
 		body {
 
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
 		}
+
+		header {background-color: #ccc}
+		
+		
+
+		nav {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			background-color:  #f2f2f2
+
+		}
+
+		nav > p {
+			display: inline-block;
+
+		}
+
+		footer {
+
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			background-color:  #ccc;
+		}
+
+
+/*************************Container****************************/
 		
 		.container {
 
-			background-color: #ccc;
+			background-color: #ffe0b3;
 			display: flex;
 			/*height: 500px;*/
 		}
@@ -38,7 +76,9 @@
 
 		.right {
 
-			background-color: olive;
+			background-color: #fbfbfb;
+			display: flex;
+			flex-direction: column;
 		}
 
 		.job {
@@ -77,55 +117,108 @@
 
 </head>
 <body>
+	<header>Here some text</header>
+
+	<nav>
+		<p>here text</p>
+		<p>some33333333333333333333333other</p>
+		<p>more stuff</p>
+		<p>never gets boring</p>
+	</nav>
 
 
-<div class="container">
+			<div class="container">
 
-	<div class="left">
+				<div class="left">
 
-		<section class="job">
-			<h1>test</h1>
+					<section class="job">
+						<h1>test</h1>
 
-			<article>
-			<div class="processes">
+						<article>
+						<div class="processes">
 
-				<ul>
-					<li>Design</li>
-					<li>Operation</li>
-				</ul>
+							<ul>
+								<li>Design</li>
+								<li>Operation</li>
+							</ul>
+
+						</div>	
+
+						<div class="technology">
+
+							<ul>
+								<li>Hardware</li>
+								<li>Networking</li>
+							</ul>
+
+						</div>
+
+						</article>
+					</section>
+
+					<section class="job">
+						test
+					</section>	
+
+					<section class="job">
+						test
+					</section>
+
+					<section class="job">
+						test
+					</section>
+				</div>
+
+				<div class="right">
+
+					<section class="job">
+						<h1>test</h1>
+
+						<article>
+						<div class="processes">
+
+							<ul>
+								<li>Design</li>
+								<li>Operation</li>
+							</ul>
+
+						</div>	
+
+						<div class="technology">
+
+							<ul>
+								<li>Hardware</li>
+								<li>Networking</li>
+							</ul>
+
+						</div>
+
+						</article>
+					</section>
+
+					<section class="job">
+						test
+					</section>	
+
+					<section class="job">
+						test
+					</section>
+
+					<section class="job">
+						test
+					</section>
+
+				</div>
 
 			</div>	
 
-			<div class="technology">
+		<footer>
+			
+			<p>here text</p>
+			<p>some33333333333333333333333other</p>
+			<p>more stuff</p>
+			<p>never gets boring</p>
 
-				<ul>
-					<li>Hardware</li>
-					<li>Networking</li>
-				</ul>
-
-			</div>
-
-			</article>
-		</section>
-
-		<section class="job">
-			test
-		</section>	
-
-		<section class="job">
-			test
-		</section>
-
-		<section class="job">
-			test
-		</section>
-	</div>
-
-	<div class="right">
-	</div>
-
-</div>	
-
-
-</body>
+		</footer>	
+	</body>
 </html>
