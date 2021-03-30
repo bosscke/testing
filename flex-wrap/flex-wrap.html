@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex-wrap-testing</title>
+	<meta name="viewport" content="device-width, initial-scale=1.0">
+
+	<style>
+		.container{
+
+			display: flex;
+			font-size: 20px;
+		} 
+
+
+
+		@media (max-width: 700px) {
+
+			.container {
+
+				background-color: blue;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+<div class="container">
+
+	<span>this is some text</span>
+	<span>this is some text</span>
+	<span>this is some text</span>
+	<span>this is some text</span>
+
+
+</div>	
+
+
+</body>
+</html>
